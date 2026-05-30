@@ -21,6 +21,17 @@ namespace Arrays
 
             // List<T>
             List<int> genericList = new List<int> { 1, 2, 3 };
+            // Display List<T>
+            Console.WriteLine("List<int>: " + string.Join(", ", genericList));
+
+            Console.Write("List<int> items: ");
+            foreach (var n in genericList)
+            {
+                Console.Write(n + " ");
+            }
+            Console.WriteLine();
+            Console.ReadLine();
+
         }
     }
 }
